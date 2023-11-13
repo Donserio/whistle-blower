@@ -1,38 +1,172 @@
-.App {
+body{
+  background-color:#FBFBFB;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.logo {
+  width: 120px;
+  height: 40px;
+}
+
+.auth-buttons{
+  display: flex;
+  gap: 20px;
+}
+
+.register {
+  all: unset;
+}
+
+.register:hover{
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+
+.login {
+  border: none;
+  border-radius: 6px;
+  background: #047D8E;
+  color: #fff;
+}
+
+.login:hover {
+  background: #0a97aa;
+  transition: background-color 1s;
+}
+
+.btn {
+  height: 45px;
+  width: 100px;
+}
+
+.text {
+  text-align: center;
+  vertical-align: middle;
+  /* font-family: Avenir Next LT Pro; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+}
+
+.hero-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+  padding: 50px;
+}
+
+.grid-one {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 70px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.whistle-blower p {
+  text-align: center;
+  vertical-align: middle;
+  /* font-family: Avenir Next LT Pro; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */ 
+}
+
+.grid-two {
+
+}
+
+.grid-two img {
+  /* height: 400px;
+  width: 500px; */
+margin-left: -100px;  
+object-fit: contain;
+}
+
+.grid-three {
+  padding: 70px 0px 0px 30px;
+  /* min-width: 700px; */
+}
+
+.grid-three h3 {
+  text-align: left;
+  vertical-align: middle;
+  /* font-family: Avenir Next LT Pro; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+}
+
+.grid-three button {
+  border: none;
+  background-color : #047D8E;
+  color: #fff;
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  transition: background-color 1s;
+}
+
+.grid-three button:hover {
+  background-color: #0a97aa;
+}
+
+
+
+.Footer {
+  background: #0B0E0F;
+  color: #fff;
+  padding: 40px 60px;
+  
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #FBFBFB;
+}
+
+.phone {  
+  display: flex;
+  gap: 10px;
+  justify-content: baseline;
+  align-items: center;
+  vertical-align: middle;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: #FBFBFB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.socials {
+  padding-top: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.socials div{
+  padding-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copyright{
+  padding-top: 10px;
+
 }
