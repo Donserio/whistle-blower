@@ -46,13 +46,25 @@ header {
 }
 
 .text {
-  text-align: center;
   vertical-align: middle;
   /* font-family: Avenir Next LT Pro; */
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px; /* 125% */
+}
+
+.fsize-32 {
+  vertical-align: middle;
+  /* font-family: Avenir Next LT Pro; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */ 
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .hero-container {
@@ -75,16 +87,6 @@ header {
 }
 
 
-.whistle-blower p {
-  text-align: center;
-  vertical-align: middle;
-  /* font-family: Avenir Next LT Pro; */
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px; /* 125% */ 
-}
-
 .grid-two {
 
 }
@@ -92,8 +94,8 @@ header {
 .grid-two img {
   /* height: 400px;
   width: 500px; */
-margin-left: -100px;  
-object-fit: contain;
+  margin-left: -100px;  
+  object-fit: contain;
 }
 
 .grid-three {
@@ -126,12 +128,69 @@ object-fit: contain;
 }
 
 
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0000003f;
+  z-index: 1000;
+  padding: 20px;
+  width: 100vw;
+  height: 1440px;
+}
+
+.form-container{
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #FBFBFB;
+  z-index: 1040;
+  min-width: 45%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.form-main {
+  padding-left: 20px;
+}
+
+.form-group {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  padding-bottom: 10px;
+}
+
+input {
+  padding: 5px;
+  height: 24px;
+  border: 1px solid #00000023;
+}
+
+textarea {
+  padding: 5px;
+  height: 72px;
+  border: 1px solid #00000023;
+}
+
+.submit-form {
+  margin: 20px 0;
+  height: 45px;
+  width: 100%;
+  border: none;
+  background: #047D8E;
+  color: #FBFBFB;
+}
 
 .Footer {
   background: #0B0E0F;
   color: #fff;
   padding: 40px 60px;
-  
+  z-index: 1500;
 }
 
 .footer-box {
@@ -168,5 +227,4 @@ a {
 
 .copyright{
   padding-top: 10px;
-
 }

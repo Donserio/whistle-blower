@@ -3,11 +3,22 @@ import "./App.css";
 import { images } from "./imagesPaths";
 import WhistleBlowerForm from "./WhistleBlowerForm";
 
+
 const HeroSection = () => {
   const [showForm, setShowForm] = useState(false);
 
-  const toggleForm = () => {
-    setShowForm(!showForm);
+  const openForm = () => {
+    setShowForm(true);
+  };
+
+  const closeForm = () => {
+    setShowForm(false);
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target.classList.contains("form-overlay")) {
+      closeForm();
+    }
   };
 
   return (
@@ -15,12 +26,15 @@ const HeroSection = () => {
       <div className="hero-container">
         <div className="grid-one whistle-blower">
           <img src={images.whistle} alt="Whistle" />
-          <p onClick={toggleForm}>Whistle Blower</p>
+          <p className="text text-align-center fsize-32" onClick={openForm}>Whistle Blower</p>
         </div>
         {showForm && (
-          <div className="form-overlay">
+          <div className="form-overlay" onClick={handleOverlayClick}>
             <div className="form-container">
               <WhistleBlowerForm />
+              {/* <button className="close-button" onClick={closeForm}>
+                Close
+              </button> */}
             </div>
           </div>
         )}
@@ -33,7 +47,7 @@ const HeroSection = () => {
             Have you experienced or observed any unethical or unprofessional conduct on the part any of our staff?
             Please click the button below to fill a form and let us know. Your Confidentiality wishes shall be fully respected.
           </p>
-          <button className="text" onClick={toggleForm}>
+          <button className="text" onClick={openForm}>
             Whistle Blower
           </button>
         </div>
