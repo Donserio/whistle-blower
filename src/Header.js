@@ -5,11 +5,18 @@ import { images } from "./imagesPaths";
 const Header = () => (
     <header>
       <div className="logo">
-        <img src={images.logo}/>
+        <a href="https://www.gbsbank.co.za/">
+          <img src={images.logo}/>
+        </a>
       </div>
       <div className="auth-buttons">
-        <button className="btn text-align-center text register">Register</button>
-        <button className="btn text-align-centertext login">Login</button>
+
+        <a href="#">
+          <button className="btn text-align-center text register">Register</button>
+        </a>
+        <a href="#">
+          <button className="btn text-align-centertext login">Login</button>
+        </a>
       </div>
     </header>
   );

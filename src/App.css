@@ -21,6 +21,7 @@ header {
 
 .register {
   all: unset;
+  color: #000;
 }
 
 .register:hover{
@@ -300,6 +301,14 @@ textarea {
     border-bottom: 1px solid #FBFBFB;
   }
   
+}
+
+.submission-message{
+  margin: 50px auto;
+  padding: 40px;
+  border: 1px solid green;
+  text-align: center;
+  line-height: normal;
 }
 
 .phone {  
