@@ -10,7 +10,6 @@ const Header = () => (
         </a>
       </div>
       <div className="auth-buttons">
-
         <a href="#">
           <button className="btn text-align-center text register">Register</button>
         </a>
