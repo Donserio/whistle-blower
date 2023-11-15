@@ -8,7 +8,7 @@ const WhistleBlowerForm = () => {
     event.preventDefault(); // Prevent the default form submission behavior
 
     // You can add logic here to send the form data to a server or perform any other actions
-    // For demonstration purposes, let's just update the state to indicate submission
+
     setIsSubmitted(true);
   };
 
